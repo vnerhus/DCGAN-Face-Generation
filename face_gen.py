@@ -24,6 +24,7 @@ mnist_images = helper.get_batch(glob(os.path.join(data_dir, 'mnist/*.jpg'))[:sho
 pyplot.imshow(helper.images_square_grid(mnist_images, 'L'), cmap='gray')
 mnist_images = helper.get_batch(glob(os.path.join(data_dir, 'img_align_celeba/*.jpg'))[:show_n_images], 28, 28, 'RGB')
 pyplot.imshow(helper.images_square_grid(mnist_images, 'RGB'))
+pyplot.show()
 
 
 # Check TensorFlow Version
